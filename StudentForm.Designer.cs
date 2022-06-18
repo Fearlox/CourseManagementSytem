@@ -50,6 +50,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.radioButton_female = new System.Windows.Forms.RadioButton();
+            this.radioButton_male = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlEnterStudent.SuspendLayout();
             this.pnlTitleStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -263,11 +266,57 @@
             this.button1.Text = "List";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // radioButton_female
+            // 
+            this.radioButton_female.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton_female.AutoSize = true;
+            this.radioButton_female.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.radioButton_female.Location = new System.Drawing.Point(552, 433);
+            this.radioButton_female.Name = "radioButton_female";
+            this.radioButton_female.Size = new System.Drawing.Size(84, 23);
+            this.radioButton_female.TabIndex = 38;
+            this.radioButton_female.Text = "FeMale";
+            this.radioButton_female.UseVisualStyleBackColor = true;
+            this.radioButton_female.CheckedChanged += new System.EventHandler(this.radioButton_female_CheckedChanged);
+            // 
+            // radioButton_male
+            // 
+            this.radioButton_male.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton_male.AutoSize = true;
+            this.radioButton_male.Checked = true;
+            this.radioButton_male.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.radioButton_male.Location = new System.Drawing.Point(479, 433);
+            this.radioButton_male.Name = "radioButton_male";
+            this.radioButton_male.Size = new System.Drawing.Size(66, 23);
+            this.radioButton_male.TabIndex = 37;
+            this.radioButton_male.TabStop = true;
+            this.radioButton_male.Text = "Male";
+            this.radioButton_male.UseVisualStyleBackColor = true;
+            this.radioButton_male.CheckedChanged += new System.EventHandler(this.radioButton_male_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label2.Location = new System.Drawing.Point(392, 435);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 19);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Gender :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 574);
+            this.Controls.Add(this.radioButton_female);
+            this.Controls.Add(this.radioButton_male);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -317,5 +366,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.RadioButton radioButton_female;
+        private System.Windows.Forms.RadioButton radioButton_male;
+        private System.Windows.Forms.Label label2;
     }
 }
